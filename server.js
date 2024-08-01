@@ -3,7 +3,7 @@ const app= express()
 const PORT= process.env.PORT || 9000
 import "dotenv/config"
 
-app.route("/", (req, res)=>{
+app.get("/", (req, res)=>{
     return res.json({message:"working"})
 })
 
